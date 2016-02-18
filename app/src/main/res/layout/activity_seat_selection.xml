@@ -1,0 +1,326 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.piyush.myapplication.SeatSelection">
+    <LinearLayout
+        android:background="@drawable/card"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/linearLayout2">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                style="@style/topimage"
+                android:src="@drawable/tableempty"
+                android:id="@+id/imageViewtop1"/>
+
+            <TextView
+                android:text="Available"
+                style="@style/Tabletop"
+                android:id="@+id/textViewtop1" />
+
+            <ImageView
+                style="@style/topimage"
+                android:src="@drawable/tableselected"
+                android:id="@+id/imageViewtop2"/>
+
+            <TextView
+                style="@style/Tabletop"
+                android:text="Your Selection"
+                android:id="@+id/textViewtop2" />
+
+            <ImageView
+                style="@style/topimage"
+                android:src="@drawable/tableunavailable"
+                android:id="@+id/imageViewtop3"/>
+
+            <TextView
+                style="@style/Tabletop"
+                android:text="Unavailable"
+                android:id="@+id/textViewtop3" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:background="@drawable/bottomview"
+        android:orientation="horizontal"
+        android:text="Book"
+        android:id="@+id/bottomlayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="setDate"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:id="@+id/datelayout"
+            android:clickable="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="TUE 14 JULY"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/textdate" />
+           <!-- <IconTextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="{fa-angle-up}"
+                android:shadowColor="#22000000"
+                android:gravity="center"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="1"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                />-->
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:onClick="bookSeat"
+            android:text="Book"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:id="@+id/timelayout"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="1:30 pm"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/textime" />
+                <IconTextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="{fa-angle-up}"
+                android:shadowColor="#22000000"
+                android:gravity="center"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="1"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--<ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/imageView7"
+          android:src="@drawable/restaurantmapfinalempty"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/linearLayout2"
+          android:layout_above="@+id/button"
+          android:layout_alignParentStart="true">
+      </ImageView>-->
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_above="@+id/bottomlayout"
+            android:layout_alignParentStart="true"
+            android:id="@+id/scrollView2">
+            <RelativeLayout
+                android:id="@+id/mainbooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/restaurantmapfinalempty"
+                    android:id="@+id/ImageBack"
+                    android:adjustViewBounds="true"/>
+                <LinearLayout
+                    android:weightSum="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:layout_alignTop="@+id/ImageBack"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="100dp"
+                    android:id="@+id/mainbookingchild">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+                        <Space
+                            style="@style/Tablespaceleftright" />
+
+                        <TextView
+                            style="@style/TableStyle"
+                            android:id="@+id/imagetable1"
+                            android:text="2"/>
+
+                        <Space
+                            android:layout_weight="4.8"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+                        <!--<Space
+                            style="@style/TableSpace" />
+
+                        <TextView
+                            style="@style/TableStyle"
+                            android:id="@+id/imagetable2"
+                            android:text="2"/>
+
+                        <Space
+                            style="@style/TableSpace" />
+
+                        <TextView
+                            style="@style/TableStyle"
+                            android:id="@+id/imagetable3"
+                            android:text="2"/>-->
+
+                        <Space
+                            style="@style/TableSpace" />
+
+                        <TextView
+                            style="@style/TableStyle"
+                            android:id="@+id/imagetable2"
+                            android:text="4"/>
+
+                        <Space
+                            style="@style/Tablespaceleftright" />
+
+                    </LinearLayout>
+                    <Space
+                       android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2">
+                    </Space>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+                        <Space
+                            style="@style/Tablespaceleftright" />
+
+                        <TextView
+                            style="@style/TableStyle"
+                            android:id="@+id/imagetable3"
+                            android:text="3"/>
+
+                        <Space
+                            style="@style/TableSpace" />
+
+                        <TextView
+                            style="@style/TableStyle"
+                            android:id="@+id/imagetable4"
+                            android:text="2"/>
+
+                        <Space
+                            style="@style/TableSpace" />
+
+                        <TextView
+                            style="@style/TableStyle"
+                            android:id="@+id/imagetable5"
+                            android:text="2"/>
+
+                        <Space
+                            style="@style/TableSpace" />
+
+                        <TextView
+                            style="@style/TableStyle"
+                            android:id="@+id/imagetable6"
+                            android:text="4"/>
+
+                        <Space
+                            style="@style/Tablespaceleftright" />
+
+                    </LinearLayout>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2">
+                    </Space>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+                        <Space
+                            style="@style/Tablespaceleftright" />
+
+                        <TextView
+                            style="@style/TableStyle"
+                            android:id="@+id/imagetable7"
+                            android:text="5"/>
+
+                        <Space
+                            style="@style/TableSpace" />
+
+                        <TextView
+                            style="@style/TableStyle"
+                            android:id="@+id/imagetable8"
+                            android:text="5"/>
+
+                        <Space
+                            style="@style/TableSpace" />
+
+                        <TextView
+                            style="@style/TableStyle"
+                            android:id="@+id/imagetable9"
+                            android:text="6"/>
+
+                        <Space
+                            style="@style/TableSpace" />
+
+                        <TextView
+                            style="@style/TableStyle"
+                            android:id="@+id/imagetable10"
+                            android:text="6"/>
+
+                        <Space
+                            style="@style/Tablespaceleftright" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView8"
+        android:layout_above="@+id/scrollView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <!--android:layout_alignTop="@+id/imageView7"
+    -->
+
+
+</RelativeLayout>

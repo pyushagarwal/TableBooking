@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="9"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.piyush.myapplication.PersonalDetails">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/bookdetail"
+        android:focusable="true"
+        android:hint="Name"
+        android:focusableInTouchMode="true"
+        android:id="@+id/editname"
+        android:layout_weight="2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/bookdetail"
+        android:hint="Phone"
+        android:maxLength="10"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editphone"
+        android:layout_weight="2" />
+    <TextView
+        android:layout_weight="2"
+        android:background="@drawable/bookdetail"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The HHI "
+        android:textSize="@dimen/FormTextSizeBold"
+        android:id="@+id/textrestaurant"/>
+
+    <TextView
+        android:layout_weight="2"
+        android:background="@drawable/bookdetail"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tue 12 JUL  12:30 PM"
+        android:textSize="@dimen/FormTextSizeBold"
+        android:id="@+id/textdatetime" />
+
+    <Button
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONFIRM"
+        style="@style/bottombutton"
+        android:id="@+id/bookdetailbutton" />
+
+</LinearLayout>

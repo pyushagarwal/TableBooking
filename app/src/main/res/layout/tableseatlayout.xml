@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:weightSum="10"
+android:layout_width="match_parent"
+android:layout_height="200dp"
+android:layout_centerInParent="true"
+android:orientation="vertical"
+android:layout_alignTop="@+id/ImageBack"
+android:layout_centerHorizontal="true"
+android:id="@+id/relativeLayout">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="2"
+    android:orientation="horizontal">
+    <Space
+        style="@style/Tablespaceleftright" />
+
+    <TextView
+        style="@style/TableStyle"
+        android:id="@+id/imagetable1"
+        android:text="2"/>
+
+    <Space
+        style="@style/TableSpace" />
+
+    <TextView
+        style="@style/TableStyle"
+        android:id="@+id/imagetable2"
+        android:text="2"/>
+
+    <Space
+        style="@style/TableSpace" />
+
+    <TextView
+        style="@style/TableStyle"
+        android:id="@+id/imagetable3"
+        android:text="2"/>
+
+    <Space
+        style="@style/TableSpace" />
+
+    <TextView
+        style="@style/TableStyle"
+        android:id="@+id/imagetable4"
+        android:text="2"/>
+
+    <Space
+        style="@style/Tablespaceleftright" />
+
+</LinearLayout>
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+</Space>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="2"
+    android:orientation="horizontal">
+    <Space
+        style="@style/Tablespaceleftright" />
+
+    <TextView
+        style="@style/TableStyle"
+        android:id="@+id/imagetable5"
+        android:text="2"/>
+
+    <Space
+        style="@style/TableSpace" />
+
+    <TextView
+        style="@style/TableStyle"
+        android:id="@+id/imagetable6"
+        android:text="2"/>
+
+    <Space
+        style="@style/TableSpace" />
+
+    <TextView
+        style="@style/TableStyle"
+        android:id="@+id/imagetable7"
+        android:text="2"/>
+
+    <Space
+        style="@style/TableSpace" />
+
+    <TextView
+        style="@style/TableStyle"
+        android:id="@+id/imagetable8"
+        android:text="2"/>
+
+    <Space
+        style="@style/Tablespaceleftright" />
+
+</LinearLayout>
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+</Space>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="2"
+    android:orientation="horizontal">
+    <Space
+        style="@style/Tablespaceleftright" />
+
+    <TextView
+        style="@style/TableStyle"
+        android:id="@+id/imagetable9"
+        android:text="2"/>
+
+    <Space
+        style="@style/TableSpace" />
+
+    <TextView
+        style="@style/TableStyle"
+        android:id="@+id/imagetable10"
+        android:text="2"/>
+
+    <Space
+        style="@style/TableSpace" />
+
+    <TextView
+        style="@style/TableStyle"
+        android:id="@+id/imagetable11"
+        android:text="2"/>
+
+    <Space
+        style="@style/TableSpace" />
+
+    <TextView
+        style="@style/TableStyle"
+        android:id="@+id/imagetable12"
+        android:text="2"/>
+
+    <Space
+        style="@style/Tablespaceleftright" />
+
+</LinearLayout>
+</LinearLayout>

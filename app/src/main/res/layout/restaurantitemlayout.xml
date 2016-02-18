@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:id="@+id/relativelayoutrestaurantitem"
+    android:paddingRight="3dp"
+    android:paddingLeft="3dp"
+    android:paddingBottom="3dp"
+    android:layout_height="150dp">
+    <ImageView
+
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageviewrestaurant"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient"
+        android:layout_height="100dp">
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The HHI"
+        android:textStyle="bold"
+        android:textSize="@dimen/FormTextSizeBold"
+        android:id="@+id/TextViewRestaurantName"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u20B9 1500"
+        android:textStyle="bold"
+        android:textSize="@dimen/FormTextSizeBold"
+        android:id="@+id/textviewprice"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="for 2"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:id="@+id/textviewpre"
+        android:textColor="#ffffff"/>
+</RelativeLayout>

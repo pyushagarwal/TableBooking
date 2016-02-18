@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Book</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_deatail">DeatailActivity</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_seat_selection">SeatSelection</string>
+    <string name="title_activity_personal_deatils">PersonalDeatils</string>
+    <string name="title_activity_personal_details">PersonalDetails</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_list_restaurant">ListRestaurantActivity</string>
+</resources>
